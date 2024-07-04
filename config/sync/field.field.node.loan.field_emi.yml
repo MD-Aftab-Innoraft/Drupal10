@@ -1,0 +1,23 @@
+uuid: ce58ad4a-f49a-472e-8cff-880639191d11
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_emi
+    - node.type.loan
+id: node.loan.field_emi
+field_name: field_emi
+entity_type: node
+bundle: loan
+label: EMI
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: 'Rs '
+  suffix: ''
+field_type: integer

@@ -1,0 +1,38 @@
+uuid: 67e3bddd-dbd8-40dd-9602-e3c52c8e963a
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.webform_default
+    - node.type.leave
+    - node.type.loan
+  module:
+    - comment
+    - contact
+    - file
+    - filter
+    - node
+    - search
+    - shortcut
+    - system
+_core:
+  default_config_hash: cFrlqjtkTfvY3RGccjJkPf1SGIfJ942IrxTLWAO4mgA
+id: authenticated
+label: Employee
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'create leave content'
+  - 'create loan content'
+  - 'delete own files'
+  - 'delete own leave content'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'use text format basic_html'
+  - 'use text format webform_default'

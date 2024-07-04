@@ -1,0 +1,28 @@
+uuid: 04170ae4-aa28-4a54-98cf-f8e4c67accb8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.loan.field_emi
+    - field.field.node.loan.field_employee
+    - field.field.node.loan.field_loan_amount
+    - field.field.node.loan.field_loan_duration
+    - node.type.loan
+  module:
+    - user
+id: node.loan.teaser
+targetEntityType: node
+bundle: loan
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_emi: true
+  field_employee: true
+  field_loan_amount: true
+  field_loan_duration: true

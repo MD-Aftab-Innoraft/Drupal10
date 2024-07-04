@@ -1,0 +1,24 @@
+uuid: e9ede93f-9dae-4fb6-8574-bc8150cd3e62
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_last_salary_processed
+    - node.type.attendance_statistics
+  module:
+    - datetime
+id: node.attendance_statistics.field_last_salary_processed
+field_name: field_last_salary_processed
+entity_type: node
+bundle: attendance_statistics
+label: 'Last Salary Processed'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,58 @@
+uuid: db3f0cd9-c541-4d10-89d0-f216fb743b0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.loan.field_emi
+    - field.field.node.loan.field_employee
+    - field.field.node.loan.field_loan_amount
+    - field.field.node.loan.field_loan_duration
+    - node.type.loan
+  module:
+    - user
+id: node.loan.default
+targetEntityType: node
+bundle: loan
+mode: default
+content:
+  field_emi:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_employee:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_loan_amount:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_loan_duration:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,0 +1,20 @@
+uuid: f0e3c903-60b6-4f11-95ea-ade3f056f612
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_emi
+field_name: field_emi
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

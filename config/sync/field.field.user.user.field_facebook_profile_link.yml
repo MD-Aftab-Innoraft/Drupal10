@@ -1,0 +1,23 @@
+uuid: 46df83ca-2ffd-4c6c-8bcb-c6403d9e3028
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_facebook_profile_link
+  module:
+    - link
+    - user
+id: user.user.field_facebook_profile_link
+field_name: field_facebook_profile_link
+entity_type: user
+bundle: user
+label: 'Facebook Profile Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

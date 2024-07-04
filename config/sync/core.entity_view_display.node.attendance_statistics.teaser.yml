@@ -1,0 +1,30 @@
+uuid: 8a08c00a-1ce1-49ab-a9d0-a68fe1e9d697
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.attendance_statistics.field_basic_salary
+    - field.field.node.attendance_statistics.field_employee
+    - field.field.node.attendance_statistics.field_hra
+    - field.field.node.attendance_statistics.field_last_salary_processed
+    - field.field.node.attendance_statistics.field_special_allowances
+    - node.type.attendance_statistics
+  module:
+    - user
+id: node.attendance_statistics.teaser
+targetEntityType: node
+bundle: attendance_statistics
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_basic_salary: true
+  field_employee: true
+  field_hra: true
+  field_last_salary_processed: true
+  field_special_allowances: true

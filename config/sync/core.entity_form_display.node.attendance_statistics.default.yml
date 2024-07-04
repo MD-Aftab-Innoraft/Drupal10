@@ -1,0 +1,104 @@
+uuid: e61d7757-163d-4e2e-bd25-3fbae7b05e2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.attendance_statistics.field_basic_salary
+    - field.field.node.attendance_statistics.field_employee
+    - field.field.node.attendance_statistics.field_hra
+    - field.field.node.attendance_statistics.field_last_salary_processed
+    - field.field.node.attendance_statistics.field_special_allowances
+    - node.type.attendance_statistics
+  module:
+    - datetime
+    - path
+id: node.attendance_statistics.default
+targetEntityType: node
+bundle: attendance_statistics
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_basic_salary:
+    type: number
+    weight: 121
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_employee:
+    type: options_select
+    weight: 124
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_hra:
+    type: number
+    weight: 122
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_last_salary_processed:
+    type: datetime_default
+    weight: 125
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_special_allowances:
+    type: number
+    weight: 123
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 120
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

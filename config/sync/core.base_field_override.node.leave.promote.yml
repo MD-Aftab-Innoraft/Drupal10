@@ -1,0 +1,22 @@
+uuid: 3e7426a3-dd54-42b6-b0a5-986e2e02942f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.leave
+id: node.leave.promote
+field_name: promote
+entity_type: node
+bundle: leave
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

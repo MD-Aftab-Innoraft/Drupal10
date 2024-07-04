@@ -1,0 +1,173 @@
+uuid: c889bd3c-8633-4e0b-a4cd-13357bfe3494
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_facebook_profile_link
+    - field.field.user.user.field_linkedin_profile_link
+    - field.field.user.user.field_role
+    - field.field.user.user.field_twitter_profile_link
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - image
+    - layout_builder
+    - link
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 25-75
+        components:
+          d676040a-b7a5-4b37-b9f7-2cd02b8db7ae:
+            uuid: d676040a-b7a5-4b37-b9f7-2cd02b8db7ae
+            region: first
+            configuration:
+              id: 'field_block:user:user:user_picture'
+              label: Picture
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: '@user.current_user_context:current_user'
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: large
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          51cf868a-24ea-4b4e-a29a-b2039745f43e:
+            uuid: 51cf868a-24ea-4b4e-a29a-b2039745f43e
+            region: second
+            configuration:
+              id: 'field_block:user:user:name'
+              label: Name
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: '@user.current_user_context:current_user'
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          94c1343a-faf4-4995-9610-8eed3ddc8311:
+            uuid: 94c1343a-faf4-4995-9610-8eed3ddc8311
+            region: second
+            configuration:
+              id: 'field_block:user:user:field_role'
+              label: Role
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: '@user.current_user_context:current_user'
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          429619e9-4ee0-4a54-a3ae-1408a3624c11:
+            uuid: 429619e9-4ee0-4a54-a3ae-1408a3624c11
+            region: second
+            configuration:
+              id: 'field_block:user:user:uid'
+              label: 'User ID'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: '@user.current_user_context:current_user'
+                view_mode: view_mode
+              formatter:
+                type: number_integer
+                label: hidden
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+_core:
+  default_config_hash: mZLyuWM9CQx2ZJVqFGSbzgFnHzudVbHBYmdU256A5Wk
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  field_facebook_profile_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_linkedin_profile_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_role:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_twitter_profile_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  user_picture:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  member_for: true

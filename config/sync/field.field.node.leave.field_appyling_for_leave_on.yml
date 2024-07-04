@@ -1,0 +1,21 @@
+uuid: e8d805e4-cbad-4666-9691-7fbee3e543de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_appyling_for_leave_on
+    - node.type.leave
+  module:
+    - datetime
+id: node.leave.field_appyling_for_leave_on
+field_name: field_appyling_for_leave_on
+entity_type: node
+bundle: leave
+label: 'Appyling for leave on'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

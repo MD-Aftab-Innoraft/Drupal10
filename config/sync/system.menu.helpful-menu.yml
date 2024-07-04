@@ -1,0 +1,8 @@
+uuid: bbe0f4f3-0584-47ec-97db-18097e5de120
+langcode: en
+status: true
+dependencies: {  }
+id: helpful-menu
+label: 'Helpful Menu'
+description: 'Links for easy access'
+locked: false

@@ -1,0 +1,29 @@
+uuid: 31793e3f-5cd0-42b2-9abc-f29525d39cc1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_employee
+    - node.type.attendance_statistics
+id: node.attendance_statistics.field_employee
+field_name: field_employee
+entity_type: node
+bundle: attendance_statistics
+label: Employee
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    filter:
+      type: _none
+    include_anonymous: true
+field_type: entity_reference

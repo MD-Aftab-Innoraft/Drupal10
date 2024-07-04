@@ -1,0 +1,22 @@
+uuid: 3b3806e8-da6a-48fa-8e9f-f48730ac20d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.attendance_statistics
+id: node.attendance_statistics.promote
+field_name: promote
+entity_type: node
+bundle: attendance_statistics
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

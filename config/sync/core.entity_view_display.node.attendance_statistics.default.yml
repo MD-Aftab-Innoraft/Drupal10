@@ -1,0 +1,69 @@
+uuid: 1a10aa84-aeeb-4867-81ee-e0edfdee2e80
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.attendance_statistics.field_basic_salary
+    - field.field.node.attendance_statistics.field_employee
+    - field.field.node.attendance_statistics.field_hra
+    - field.field.node.attendance_statistics.field_last_salary_processed
+    - field.field.node.attendance_statistics.field_special_allowances
+    - node.type.attendance_statistics
+  module:
+    - datetime
+    - user
+id: node.attendance_statistics.default
+targetEntityType: node
+bundle: attendance_statistics
+mode: default
+content:
+  field_basic_salary:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_employee:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_hra:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_last_salary_processed:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: olivero_medium
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_special_allowances:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

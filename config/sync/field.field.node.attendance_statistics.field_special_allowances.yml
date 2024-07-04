@@ -1,0 +1,25 @@
+uuid: 4785ab55-cd2b-4ef9-a838-20730644b78f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_special_allowances
+    - node.type.attendance_statistics
+id: node.attendance_statistics.field_special_allowances
+field_name: field_special_allowances
+entity_type: node
+bundle: attendance_statistics
+label: 'Special Allowances'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: 0
+  max: 999999
+  prefix: 'Rs '
+  suffix: ''
+field_type: integer

@@ -1,0 +1,67 @@
+uuid: 9d42452a-e050-4928-9d1f-e5a888b52a6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - block_content.type.last_salary_block
+    - filter.format.full_html
+    - filter.format.restricted_html
+    - node.type.attendance_statistics
+    - node.type.leave
+    - node.type.loan
+  module:
+    - block_content
+    - field_ui
+    - filter
+    - node
+    - system
+    - taxonomy
+    - views_ui
+id: hr
+label: HR
+weight: 4
+is_admin: null
+permissions:
+  - 'administer actions'
+  - 'administer block_content form display'
+  - 'administer menu'
+  - 'administer node display'
+  - 'administer nodes'
+  - 'administer taxonomy_term display'
+  - 'administer taxonomy_term fields'
+  - 'administer taxonomy_term form display'
+  - 'administer user display'
+  - 'administer user form display'
+  - 'administer views'
+  - 'change own username'
+  - 'create attendance_statistics content'
+  - 'create last_salary_block block content'
+  - 'create leave content'
+  - 'create loan content'
+  - 'delete any attendance_statistics content'
+  - 'delete any basic block content revisions'
+  - 'delete any last_salary_block block content'
+  - 'delete any last_salary_block block content revisions'
+  - 'delete any leave content'
+  - 'delete any loan content'
+  - 'delete attendance_statistics revisions'
+  - 'delete leave revisions'
+  - 'delete loan revisions'
+  - 'delete own attendance_statistics content'
+  - 'delete own leave content'
+  - 'delete own loan content'
+  - 'edit any attendance_statistics content'
+  - 'edit any last_salary_block block content'
+  - 'edit any leave content'
+  - 'edit any loan content'
+  - 'edit own attendance_statistics content'
+  - 'edit own leave content'
+  - 'edit own loan content'
+  - 'revert any last_salary_block block content revisions'
+  - 'revert leave revisions'
+  - 'use text format full_html'
+  - 'use text format restricted_html'
+  - 'view any last_salary_block block content history'
+  - 'view loan revisions'
+  - 'view user email addresses'

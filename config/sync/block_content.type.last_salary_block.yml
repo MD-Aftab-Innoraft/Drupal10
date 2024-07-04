@@ -1,0 +1,8 @@
+uuid: 70c869d6-60d1-4b85-8bcd-8d6f161e1603
+langcode: en
+status: true
+dependencies: {  }
+id: last_salary_block
+label: 'Last Salary Block'
+revision: true
+description: 'Displays the last salary processed for the employee.'

@@ -1,0 +1,18 @@
+uuid: 7c09144a-8db9-41c3-aa0f-b8f1e72a5cdf
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Leave
+type: leave
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

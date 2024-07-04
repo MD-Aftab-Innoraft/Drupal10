@@ -1,0 +1,9 @@
+uuid: aaf2a342-7019-422d-b964-39a6b55ed24c
+langcode: en
+status: true
+dependencies: {  }
+name: 'Job Role'
+vid: job_role
+description: 'Job role of the employee'
+weight: 0
+new_revision: true

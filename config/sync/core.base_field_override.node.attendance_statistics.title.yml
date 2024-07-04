@@ -1,0 +1,18 @@
+uuid: 65c96463-94c6-4688-9571-40e2e3dc8202
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.attendance_statistics
+id: node.attendance_statistics.title
+field_name: title
+entity_type: node
+bundle: attendance_statistics
+label: Salary
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

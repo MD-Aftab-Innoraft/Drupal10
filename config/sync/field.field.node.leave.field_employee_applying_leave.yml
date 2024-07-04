@@ -1,0 +1,29 @@
+uuid: 509ebde4-06df-4a87-9b2f-647bece7d77c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_employee_applying_leave
+    - node.type.leave
+id: node.leave.field_employee_applying_leave
+field_name: field_employee_applying_leave
+entity_type: node
+bundle: leave
+label: 'Employee Applying Leave'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    filter:
+      type: _none
+    include_anonymous: true
+field_type: entity_reference

@@ -1,0 +1,22 @@
+uuid: 5db029ed-f0c3-4952-8a87-306c300296a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.last_salary_block
+    - field.field.block_content.last_salary_block.body
+  module:
+    - text
+id: block_content.last_salary_block.default
+targetEntityType: block_content
+bundle: last_salary_block
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
